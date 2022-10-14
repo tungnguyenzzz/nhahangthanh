@@ -5,6 +5,15 @@
     top: 800px;
     right: 50px;
     z-index: 1;
+
+}
+
+.textCall {
+    position: fixed;
+    top: 750px;
+    right: 30px;
+    z-index: 1;
+    color: orangered;
 }
 
 .imgCall {
@@ -14,8 +23,8 @@
 
 @media screen and (max-width:480px) {
     .imgCall {
-        height: 60px;
-        width: 60px;
+        height: 60 !important;
+        width: 60 !important;
     }
 
     .btnCall {
@@ -23,5 +32,14 @@
         top: 450px;
         right: 20px;
         z-index: 1;
+    }
+
+    .textCall {
+        font-size: 14px;
+        position: fixed;
+        top: 415px;
+        right: 10px;
+        z-index: 1;
+        color: orangered;
     }
 }

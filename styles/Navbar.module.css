@@ -1,7 +1,7 @@
 .container {
   height: 100px;
   padding: 0px 50px;
-  background-color: #FFFFCC;
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -11,6 +11,9 @@
 }
 
 
+.img_mobile {
+  display: none;
+}
 
 .bars_btn {
   width: 32px;
@@ -73,6 +76,7 @@
 
 .cart {
   position: relative;
+  margin-left: 20px;
 }
 
 .counter {
@@ -156,7 +160,12 @@
   }
 
   .item:nth-child(1) {
-    flex: 3;
+    display: none;
+  }
+
+  .img_mobile {
+    display: block;
+    margin-right: 10px;
   }
 }
 

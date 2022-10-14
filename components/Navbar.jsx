@@ -16,7 +16,7 @@ const Navbar = () => {
 
         <div className={styles.texts}>
           <div className={styles.text}>ĐẶT NGAY!</div>
-          <div className={styles.text}>𝟬𝟯𝟯.𝟰𝟵𝟴.𝟲𝟱𝟭𝟴</div>
+          <div className={styles.text}>033.498.6518</div>
         </div>
 
       </div>
@@ -47,7 +47,11 @@ const Navbar = () => {
           </Link>
         </ul>
       </div>
-
+      <Link href="/" passHref>
+        <div className={styles.img_mobile}>
+          <Image src="/img/logo1.png" alt="" width="160px" height="69px" />
+        </div>
+      </Link>
       <Link href="/cart" passHref>
         <div className={styles.item}>
           <div className={styles.cart}>
@@ -67,6 +71,7 @@ const Navbar = () => {
         <label htmlFor="nav-mobile-input" className={styles.mobile_colse}>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z" /></svg>
         </label>
+
         <ul className={styles.list_mobile}>
 
 

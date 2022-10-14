@@ -13,9 +13,9 @@ export default function Home({ pizzaList, admin }) {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Pizza Restaurant in Newyork</title>
-        <meta name="description" content="Best pizza shop in town" />
-        <link rel="icon" href="/favicon.ico" />
+        <title>Nhà hàng SABAY</title>
+        <meta name="description" content="Lựa chọn nhà hàng tốt nhất" />
+
       </Head>
       <Featured />
       {<AddButton setClose={setClose} />}
