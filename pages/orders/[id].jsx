@@ -114,7 +114,7 @@ const Order = ({ order }) => {
 };
 
 export const getServerSideProps = async ({ params }) => {
-  const res = await axios.get(`https://nhahang-pkl04rzlm-tungnguyenzzz.vercel.app/api/orders/${params.id}`);
+  const res = await axios.get(`https://nhahang.vercel.app/api/orders/${params.id}`);
   return {
     props: { order: res.data },
   };
