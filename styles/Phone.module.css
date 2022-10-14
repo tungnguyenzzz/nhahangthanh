@@ -1,0 +1,27 @@
+.container {}
+
+.btnCall {
+    position: fixed;
+    top: 800px;
+    right: 50px;
+    z-index: 1;
+}
+
+.imgCall {
+    height: 100px;
+    width: 100px;
+}
+
+@media screen and (max-width:480px) {
+    .imgCall {
+        height: 60px;
+        width: 60px;
+    }
+
+    .btnCall {
+        position: fixed;
+        top: 450px;
+        right: 20px;
+        z-index: 1;
+    }
+}

@@ -1,0 +1,171 @@
+.container {
+  height: 100px;
+  padding: 0px 50px;
+  background-color: #FFFFCC;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+
+
+.bars_btn {
+  width: 32px;
+  height: 32px;
+  color: #fff;
+  display: none;
+  padding-left: 5px;
+}
+
+.item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.item:nth-child(2) {
+  flex: 2;
+}
+
+.item:last-child {
+  justify-content: flex-end;
+}
+
+.callButton {
+  background-color: black;
+  border-radius: 50%;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+.texts {
+  margin-left: 20px;
+  color: black;
+}
+
+.text:first-child {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.text:last-child {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.list {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  color: black;
+}
+
+.listItem {
+  margin: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.cart {
+  position: relative;
+}
+
+.counter {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: black;
+  padding: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+}
+
+.item_mobile {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 250px;
+  max-width: 100%;
+  background-color: #fff;
+  transform: translate(+100%);
+  opacity: 0;
+  transition: all linear 0.25s;
+}
+
+.list_mobile {
+  flex-direction: column;
+  margin-top: 25px;
+}
+
+.listItem_mobile {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 10px 0;
+  font-size: 1.4rem;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+  animation: fadeIn linear 0.25s;
+}
+
+.mobile_colse {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.nav_input:checked~.overlay {
+  display: block;
+}
+
+.nav_input:checked~.item_mobile {
+  transform: translate(0);
+  opacity: 1;
+}
+
+@media screen and (max-width:480px) {
+  .item:nth-child(2) {
+    display: none;
+  }
+
+  .bars_btn {
+    display: block;
+
+  }
+
+  .item:nth-child(1) {
+    flex: 3;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
