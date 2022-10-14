@@ -33,7 +33,7 @@ export const getServerSideProps = async (ctx) => {
     admin = true;
   }
   await dbConnect();
-  const res = await axios.get("https://nhahang.vercel.app/api/products");
+  const res = await axios.get("https://nhahang-pkl04rzlm-tungnguyenzzz.vercel.app/api/products");
   return {
     props: {
       pizzaList: res.data,
