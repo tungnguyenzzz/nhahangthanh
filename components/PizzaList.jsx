@@ -6,6 +6,13 @@ const PizzaList = ({ pizzaList }) => {
   const [query, setQuery] = useState("");
   const [selecteItem, setSelecteItem] = useState("");
   const selected = pizzaList
+  const fix = selected.map((select) => (
+
+    select.extraOptions[0].text
+  ))
+
+  var uniq = [...new Set(fix)];//loai bo phan tu trung nhau select
+
   const handleChange = (event) => {
 
     setSelecteItem(event.target.value)
@@ -14,7 +21,7 @@ const PizzaList = ({ pizzaList }) => {
   const handleClick = () => {
     setSelecteItem("")
   }
-  console.log(selecteItem);
+
   return (
 
     <div className={styles.container}>
@@ -35,9 +42,9 @@ const PizzaList = ({ pizzaList }) => {
 
       <label className={styles.loc} htmlFor="">Chọn loại món</label>
       <select className={styles.select} onChange={handleChange}>
-        {selected.map((select) => (
+        {uniq.map((select) => (
 
-          <option key={select._id} defaultValue="" value={select.extraOptions[0].text}>{select.extraOptions[0].text}</option>
+          <option key={select} defaultValue="" value={select}>{select}</option>
         ))}
 
 

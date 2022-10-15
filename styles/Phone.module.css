@@ -29,7 +29,7 @@
 
     .btnCall {
         position: fixed;
-        top: 450px;
+        top: 560px;
         right: 20px;
         z-index: 1;
     }
@@ -37,7 +37,7 @@
     .textCall {
         font-size: 14px;
         position: fixed;
-        top: 415px;
+        top: 525px;
         right: 10px;
         z-index: 1;
         color: orangered;
