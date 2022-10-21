@@ -1,16 +1,18 @@
 .container {}
 
 .btnCall {
+    display: none;
     position: fixed;
-    top: 740px;
+    top: 900px;
     right: 50px;
     z-index: 1;
 
 }
 
 .textCall {
+    display: none;
     position: fixed;
-    top: 690px;
+    top: 750px;
     right: 30px;
     z-index: 1;
     color: orangered;
@@ -28,6 +30,7 @@
     }
 
     .btnCall {
+        display: block;
         position: fixed;
         top: 500px;
         right: 25px;
@@ -35,6 +38,7 @@
     }
 
     .textCall {
+        display: block;
         font-size: 14px;
         position: fixed;
         top: 465px;
@@ -43,24 +47,3 @@
         color: orangered;
     }
 }
-@media screen and (min-width: 992px) {
-    .imgCall {
-        height: 70 !important;
-        width: 70 !important;
-    }
-    .btnCall {
-        position: fixed;
-        top: 560px;
-        right:25px;
-        z-index: 1;
-    }
-
-    .textCall {
-        font-size: 14px;
-        position: fixed;
-        top: 520px;
-        right: 15px;
-        z-index: 1;
-        color: orangered;
-    }
-  }

@@ -12,7 +12,7 @@ const Index = ({ orders, products }) => {
     console.log(id);
     try {
       const res = await axios.delete(
-        "http://www.sabaythaihn.com.vn/api/products/" + id
+        "https://www.sabaythaihn.com.vn/api/products/" + id
       );
       setPizzaList(pizzaList.filter((pizza) => pizza._id !== id));
     } catch (err) {
@@ -25,7 +25,7 @@ const Index = ({ orders, products }) => {
     const currentStatus = item.status;
 
     try {
-      const res = await axios.put("http:s//www.sabaythaihn.com.vn/api/orders/" + id, {
+      const res = await axios.put("https://www.sabaythaihn.com.vn/api/orders/" + id, {
         status: currentStatus + 1,
       });
       setOrderList([

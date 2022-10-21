@@ -11,7 +11,7 @@ const Login = () => {
 
   const handleClick = async () => {
     try {
-      await axios.post("http://www.sabaythaihn.com.vn/api/login", {
+      await axios.post("https://www.sabaythaihn.com.vn/api/login", {
         username,
         password,
       });

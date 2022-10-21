@@ -33,7 +33,7 @@ export const getServerSideProps = async (ctx) => {
     admin = true;
   }
   await dbConnect();
-  const res = await axios.get("http://www.sabaythaihn.com.vn/api/products");
+  const res = await axios.get("https://www.sabaythaihn.com.vn/api/products");
   return {
     props: {
       pizzaList: res.data,

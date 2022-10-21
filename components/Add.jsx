@@ -44,7 +44,7 @@ const Add = ({ setClose }) => {
         img: url,
       };
 
-      await axios.post("http://www.sabaythaihn.com.vn/api/products", newProduct);
+      await axios.post("https://www.sabaythaihn.com.vn/api/products", newProduct);
       setClose(true);
     } catch (err) {
       console.log(err);

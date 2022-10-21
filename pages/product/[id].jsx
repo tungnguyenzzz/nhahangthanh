@@ -120,7 +120,7 @@ const Product = ({ pizza }) => {
 
 export const getServerSideProps = async ({ params }) => {
   const res = await axios.get(
-    `http://www.sabaythaihn.com.vn/api/products/${params.id}`
+    `https://www.sabaythaihn.com.vn/api/products/${params.id}`
   );
   return {
     props: {
