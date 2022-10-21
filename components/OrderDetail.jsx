@@ -1,5 +1,7 @@
 import { useState } from "react";
 import styles from "../styles/OrderDetail.module.css";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const OrderDetail = ({ total, createOrder }) => {
   const [customer, setCustomer] = useState("");
@@ -7,6 +9,16 @@ const OrderDetail = ({ total, createOrder }) => {
 
   const handleClick = () => {
     createOrder({ customer, address, total, method: 0 });
+    toast.success('Bạn đã gọi món. Gọi cho chúng tôi để xác nhận', {
+      position: "top-center",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+    });
   };
 
   return (
@@ -44,6 +56,18 @@ const OrderDetail = ({ total, createOrder }) => {
           Gọi món
         </button>
       </div>
+      <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="colored"
+      />
     </div>
   );
 };
