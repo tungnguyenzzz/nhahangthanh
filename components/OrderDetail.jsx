@@ -7,8 +7,8 @@ const OrderDetail = ({ total, createOrder }) => {
   const [customer, setCustomer] = useState("");
   const [address, setAddress] = useState("");
 
-  const handleClick = () => {
-    createOrder({ customer, address, total, method: 0 });
+  const handleClick = async () => {
+    await createOrder({ customer, address, total, method: 0 });
     toast.success('Bạn đã gọi món. Gọi cho chúng tôi để xác nhận', {
       position: "top-center",
       autoClose: 2000,

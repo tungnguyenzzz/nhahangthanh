@@ -44,7 +44,7 @@ const Add = ({ setClose }) => {
         img: url,
       };
 
-      await axios.post("https://nhahang.vercel.app/api/products", newProduct);
+      await axios.post("http://www.sabaythaihn.com.vn/api/products", newProduct);
       setClose(true);
     } catch (err) {
       console.log(err);
