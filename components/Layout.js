@@ -1,3 +1,4 @@
+import Facebook from "./Facebook";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import Phone from "./Phone";
@@ -9,6 +10,7 @@ const Layout = ({ children }) => {
       {children}
       <Phone />
       <Footer />
+      <Facebook />
     </>
   );
 };

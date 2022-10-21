@@ -67,3 +67,17 @@
     height: 200px;
   }
 }
+@media screen and (min-width: 992px) {
+  .container {
+    height: calc(90vh - 100px);
+    text-align: center;
+  }
+  .facebook {
+    margin-top: 22px;
+  }
+  .logofooter{
+    margin-top: 60px;
+  }
+
+  
+}

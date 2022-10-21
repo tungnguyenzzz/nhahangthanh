@@ -31,8 +31,9 @@ const Footer = () => {
             Thứ Hai ĐẾN Chủ Nhật
             <br /> 9:00 – 23:00
           </p>
-          <Image src="/img/logo1.png" alt="" width="300px" height="130px" />
-
+          <div className={styles.logofooter}>
+            <Image src="/img/logo1.png" alt="" width="300px" height="130px" />
+          </div>
           {/* <p className={styles.text}>
             SATURDAY - SUNDAY
             <br /> 12:00 – 24:00
