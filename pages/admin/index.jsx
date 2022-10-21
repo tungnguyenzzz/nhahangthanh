@@ -25,7 +25,7 @@ const Index = ({ orders, products }) => {
     const currentStatus = item.status;
 
     try {
-      const res = await axios.put("http://www.sabaythaihn.com.vn/api/orders/" + id, {
+      const res = await axios.put("http:s//www.sabaythaihn.com.vn/api/orders/" + id, {
         status: currentStatus + 1,
       });
       setOrderList([
@@ -129,8 +129,8 @@ export const getServerSideProps = async (ctx) => {
     };
   }
 
-  const productRes = await axios.get("http://www.sabaythaihn.com.vn/api/products");
-  const orderRes = await axios.get("http://www.sabaythaihn.com.vn/api/orders");
+  const productRes = await axios.get("https://www.sabaythaihn.com.vn/api/products");
+  const orderRes = await axios.get("https://www.sabaythaihn.com.vn/api/orders");
 
   return {
     props: {
