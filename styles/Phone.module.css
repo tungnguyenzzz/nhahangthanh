@@ -34,7 +34,7 @@
         position: fixed;
         top: 500px;
         right: 25px;
-        z-index: 1;
+        z-index: 999;
     }
 
     .textCall {
