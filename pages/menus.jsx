@@ -9,17 +9,29 @@ const menus = () => {
                 Hãy cùng SaBay Thai Hà Nội cùng tìm hiểu nhé!
             </p>
             <div className={styles.img}>
-                <img className={styles.img_item} src='https://res.cloudinary.com/dh0l2njij/image/upload/v1665676922/set%20menu/combo_1_lcmjxg.jpg'></img>
+                <img className={styles.img_item} src='https://res.cloudinary.com/dh0l2njij/image/upload/v1667060052/set%20menu/c2fac0621c33da6d8322_jsie2e.jpg'></img>
             </div>
             <div className={styles.img}>
-                <img className={styles.img_item} src='https://res.cloudinary.com/dh0l2njij/image/upload/v1665676921/set%20menu/combo_2_dswrgk.jpg'></img>
+                <img className={styles.img_item} src='https://res.cloudinary.com/dh0l2njij/image/upload/v1667060052/set%20menu/e30d6bbfb7ee71b028ff_zh75vb.jpg'></img>
+            </div>
+
+            <div className={styles.img}>
+                <img className={styles.img_item} src='https://res.cloudinary.com/dh0l2njij/image/upload/v1667060052/set%20menu/a93467f9bba87df624b9_u4cxtk.jpg'></img>
             </div>
             <div className={styles.img}>
-                <img className={styles.img_item} src='https://res.cloudinary.com/dh0l2njij/image/upload/v1665676922/set%20menu/combo_3_dwbnib.jpg'></img>
+                <img className={styles.img_item} src='https://res.cloudinary.com/dh0l2njij/image/upload/v1667060052/set%20menu/5aa7a5757924bf7ae635_tamy0r.jpg'></img>
             </div>
             <div className={styles.img}>
-                <img className={styles.img_item} src='https://res.cloudinary.com/dh0l2njij/image/upload/v1665676921/set%20menu/menu_1_wosqud.jpg'></img>
+                <img className={styles.img_item} src='https://res.cloudinary.com/dh0l2njij/image/upload/v1667060053/set%20menu/6eecdf560307c5599c16_xbycpi.jpg'></img>
             </div>
+            <div className={styles.img}>
+                <img className={styles.img_item} src='https://res.cloudinary.com/dh0l2njij/image/upload/v1667060052/set%20menu/0af4ad507101b75fee10_fneoas.jpg'></img>
+            </div>
+            <div className={styles.img}>
+                <img className={styles.img_item} src='https://res.cloudinary.com/dh0l2njij/image/upload/v1667060053/set%20menu/fbdfbb016750a10ef841_r3hww0.jpg'></img>
+            </div>
+
+
         </div>
     )
 }

@@ -8,7 +8,7 @@ const PizzaList = ({ pizzaList }) => {
   const selected = pizzaList
   const fix = selected.map((select) => (
 
-    select.extraOptions[0].text ? select.extraOptions[0].text : ""
+    select.extraOptions[0]?.text ? select.extraOptions[0].text : ""
   ))
 
   var uniq = [...new Set(fix)];//loai bo phan tu trung nhau select
